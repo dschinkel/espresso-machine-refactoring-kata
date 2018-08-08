@@ -1,19 +1,3 @@
-/*
- pull()(note: pullShot() would be a better name)
-    - this sets the courseness level
-    - this kicks off the brewing.  The brewing is another nested if statement inside this pull shot
-
- dispenseSteam()
-
- dispenseWater()
-    
-  Also this is just a list of functions inside a file.  There really isn't a true module here.  It's just a bunch of functions
-  grouped in a file that has no underlying structure to it really
-*/
-
-// all of the below is some really really bad code
-
-
 const light = {
   on: () => {},
   off: () => {}
@@ -46,7 +30,7 @@ function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
     boilers[0].warmUp();
     boilers[1].warmUp();
     dashboard.on();
-    return dashboard; // we couple the UI to the API here (bad of course)
+    return dashboard;
   }
 
   if (sleep){
