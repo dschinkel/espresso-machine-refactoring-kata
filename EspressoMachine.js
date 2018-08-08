@@ -11,6 +11,7 @@
   grouped in a file that has no underlying structure to it really
 */
 
+// a really really bad function
 function run(turnOn, turnOff, pull, steam, water) {
   /*
     default shot - standard
