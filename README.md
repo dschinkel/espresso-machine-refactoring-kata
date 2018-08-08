@@ -12,3 +12,4 @@ In this kata we have hypothetical source code behind an espresso machine's touch
 2. **Refactor it** using [SOLID Principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
 
 3. **Add new features** via TDD to extend the code that now adhere's to SOLID
+    - *new features TBD (WIP)*
