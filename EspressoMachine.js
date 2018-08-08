@@ -11,14 +11,40 @@
   grouped in a file that has no underlying structure to it really
 */
 
-// a really really bad function
-function run(awake, sleep, pull, steam, water) {
+// all of the below is some really really bad code
+
+
+const light = {
+  on: () => {}
+}
+
+const broilers = [
+  {
+    warmUp: null
+  },
+  {
+    warmUp: null
+  }
+]
+
+// ****** UI ******
+const dashboard = () => {
+  // render(){
+  //   return <div />
+  // }
+}
+
+
+// ****** Underlying API ******
+function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
+  if(awake){
+    boilers[0].warmUp();
+    boilers[1].warmUp();
+    light.on();
+    dashboard.show();
+  }
   /*
     default shot - standard
-    if(awake)
-      - start boilers
-      - turn on light
-      - show Coffee Utility Dashboard
 
     if(sleep)
       - set UI to sleep mode
