@@ -12,14 +12,17 @@
 */
 
 // a really really bad function
-function run(turnOn, turnOff, pull, steam, water) {
+function run(awake, sleep, pull, steam, water) {
   /*
     default shot - standard
-    if(turnOn)
-      ...
+    if(awake)
+      - start boilers
+      - turn on light
+      - show Coffee Utility Dashboard
 
-    if(turnOff)
-      ...
+    if(sleep)
+      - set UI to sleep mode
+      - turn off boilers
 
     if(pull)
       // preinfusion
