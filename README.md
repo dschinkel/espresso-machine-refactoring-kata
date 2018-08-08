@@ -8,4 +8,5 @@ In this kata we have hypothetical source code behind an espresso machine's touch
  - write integration tests around the EspressoMachine module so that you can start to refactor with at least some degree of safety
 
 2. **refactor it** using [SOLID Principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
-- add new features to the virtual espresso machine
+
+3. Add new features to extend the code that now adhere's to SOLID
