@@ -25,13 +25,17 @@ function run(awake, sleep, pull, steam, water) {
       - turn off boilers
 
     if(pull)
-      // preinfusion
+      // setup pre-infusion
         - default length/time
             me: this is really a setting that needs to be tweak-able to allow different shot types
 
       // set up shot
         - default hard coded shot temp
         - default hard coded shot pull time
+
+     // run pre-infusion
+
+     // pull the shot
 
     if(steam)
       // run steam
