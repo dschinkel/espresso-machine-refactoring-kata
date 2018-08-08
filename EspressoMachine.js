@@ -41,7 +41,7 @@ function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
     boilers[0].warmUp();
     boilers[1].warmUp();
     light.on();
-    dashboard.show();
+    return dashboard; // we couple the UI to the API here (bad of course)
   }
   /*
     default shot - standard
