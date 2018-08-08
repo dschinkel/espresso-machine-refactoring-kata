@@ -42,35 +42,32 @@ const dashboard = {
 
 // ****** Underlying API ******
 function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
-  if(awake){
+  if (awake) {
     boilers[0].warmUp();
     boilers[1].warmUp();
     dashboard.on();
     return dashboard; // we couple the UI to the API here (bad of course)
   }
 
-  if(sleep)
+  if (sleep){
     dashboard.sleep();
     boilers[0].off();
     boilers[1].off();
+  }
+
+  if(pull){
+    let time = 10,
+      temp = 165,
+      time2 = 15;
+
+    // run pre-infusion
+      // not sure what this is going to be yet
+    // pull the shot
+      // not sure what this is going to be yet
+  }
+
   /*
     default shot - standard
-
-
-
-    if(pull)
-      // setup pre-infusion
-        - default length/time
-            me: this is really a setting that needs to be tweak-able to allow different shot types
-
-      // set up shot
-        - default hard coded shot temp
-        - default hard coded shot pull time
-
-     // run pre-infusion
-
-     // pull the shot
-
     if(steam)
       // run steam
         - default hard coded temp
