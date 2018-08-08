@@ -15,7 +15,8 @@
 
 
 const light = {
-  on: () => {}
+  on: () => {},
+  off: () => {}
 }
 
 const broilers = [
@@ -28,11 +29,15 @@ const broilers = [
 ]
 
 // ****** UI ******
-const dashboard = () => {
-  // render(){
-  //   return <div />
-  // }
+const dashboard = {
+  on: () => {
+    return "<Dashboard on />"
+  },
+  sleep: () => {
+    "<Dashboard sleep />"
+  }
 }
+
 
 
 // ****** Underlying API ******
@@ -40,15 +45,18 @@ function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
   if(awake){
     boilers[0].warmUp();
     boilers[1].warmUp();
-    light.on();
+    dashboard.on();
     return dashboard; // we couple the UI to the API here (bad of course)
   }
+
+  if(sleep)
+    dashboard.sleep();
+    boilers[0].off();
+    boilers[1].off();
   /*
     default shot - standard
 
-    if(sleep)
-      - set UI to sleep mode
-      - turn off boilers
+
 
     if(pull)
       // setup pre-infusion
