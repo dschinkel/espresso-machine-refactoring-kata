@@ -1,6 +1,6 @@
 espresso machine refactoring kata
 =================================
-![Image of an espresso machine with UI](https://github.com/dschinkel/espresso-machine-refactoring-kata/espresso-machine-with-ui.jpg)
+![Image of an espresso machine with UI](https://github.com/dschinkel/espresso-machine-refactoring-kata/blob/master/espresso-machine-with-ui.jpg)
 
 In this kata we have hypothetical source code behind an espresso machine's touch based UI expressed in one big messy module called EspressMachine.
 
