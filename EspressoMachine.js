@@ -2,11 +2,6 @@
   Some really awful code
 */
 
-const light = {
-  on: () => { return true; },
-  off: () => { return true; }
-}
-
 const boilers = [
   {
     warmUp: null
