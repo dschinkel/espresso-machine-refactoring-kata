@@ -6,10 +6,10 @@ In this kata we have hypothetical source code behind an espresso machine's touch
 
 When we say messy it means all sorts of things:
 - Doesn't adhere to SOLID
-- is not Clean Code (naming of functions, variables, size of functions, and more)
+- is not [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (naming of functions, variables, size of functions, and more)
 
 *Your job is to perform the following in this order:*
-1. **Write integration tests** around the messy legacy code to gain confidence before refactorin
+1. **Write integration tests** around the messy legacy code to gain confidence before refactoring
 
     - If you're a beginner with tests #1 can be optional but still do #3 after you refactor and get to know TDD
 

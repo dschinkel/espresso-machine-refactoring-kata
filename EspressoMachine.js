@@ -1,6 +1,10 @@
+/*
+  Some really awful code
+*/
+
 const light = {
-  on: () => {},
-  off: () => {}
+  on: () => { return true; },
+  off: () => { return true; }
 }
 
 const broilers = [
