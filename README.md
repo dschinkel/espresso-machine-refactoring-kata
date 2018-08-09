@@ -4,6 +4,10 @@ espresso machine refactoring kata
 
 In this kata we have hypothetical source code behind an espresso machine's touch based UI expressed in one **big messy module** called **EspressoMachine**.
 
+When we say messy it means all sorts of things:
+- Doesn't adhere to SOLID
+- is not Clean Code (naming of functions, variables, size of functions, and more)
+
 *Your job is to perform the following in this order:*
 1. **Write integration tests** around the messy legacy code to gain confidence before refactorin
 
