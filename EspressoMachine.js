@@ -7,7 +7,7 @@ const light = {
   off: () => { return true; }
 }
 
-const broilers = [
+const boilers = [
   {
     warmUp: null
   },
@@ -65,7 +65,7 @@ function run(awake, sleep, pull, steam, water, boilers, dashboard) {
     water.set(160)
 }
 
-run(true, true, true, true, broilers, dashboard);
+run(true, true, true, true, boilers, dashboard);
 
 
 
