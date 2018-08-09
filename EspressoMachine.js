@@ -14,14 +14,13 @@ const dashboard = {
 }
 
 // ****** Underlying API ******
-function run(awake, sleep, pull, steam, water, boilers, dashboard) {
+function run(awake, sleep, pull, steam, water, tank, boilers, dashboard) {
   const tank = {
     hasWater: true
   }
 
   if (awake) {
-    boilers[0].warmUp();
-    boilers[1].warmUp();
+
     dashboard.on();
     return dashboard;
   }
@@ -37,8 +36,13 @@ function run(awake, sleep, pull, steam, water, boilers, dashboard) {
       temp = 165,
       time2 = 15;
 
-    infusion(time);
-    drawShot(temp, time2);
+    if(boilers[0].warmUp() && boilers[1].warmUp()) {
+      infusion(time);
+    }
+
+    if(infusion.done) {
+      drawShot(temp, time2);
+    }
   }
 
   if(steam) {
@@ -62,6 +66,10 @@ const boilers = [
     off: null
   }
 ]
+
+const tank = {
+  hasWater: true
+}
 
 const water = {
   warmTo: (temp) => {}

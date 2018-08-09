@@ -2,7 +2,7 @@ espresso machine refactoring kata
 =================================
 ![Image of an espresso machine with UI](https://github.com/dschinkel/espresso-machine-refactoring-kata/blob/master/espresso-machine-with-ui.jpg)
 
-In this kata we have hypothetical source code behind an espresso machine's touch based UI expressed in one **big messy module** called **EspressoMachine**.
+In this kata we have hypothetical source code behind an espresso machine's touch based UI whos underlying behavior expressed in one **big messy module** called **EspressoMachine**.
 
 When we say **messy** it means all sorts of things:
 - Doesn't adhere to SOLID
