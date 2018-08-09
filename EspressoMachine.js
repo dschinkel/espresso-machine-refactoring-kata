@@ -2,14 +2,7 @@
   Some really awful code
 */
 
-const boilers = [
-  {
-    warmUp: null
-  },
-  {
-    warmUp: null
-  }
-]
+
 
 // ****** UI ****** - some fake React code that doesn't work yet
 const dashboard = {
@@ -23,6 +16,10 @@ const dashboard = {
 
 // ****** Underlying API ******
 function run(awake, sleep, pull, steam, water, boilers, dashboard) {
+  const tank = {
+    hasWater: true
+  }
+
   if (awake) {
     boilers[0].warmUp();
     boilers[1].warmUp();
@@ -45,11 +42,37 @@ function run(awake, sleep, pull, steam, water, boilers, dashboard) {
     drawShot(temp, time2);
   }
 
-  if(steam)
-    steam.set(180, 100);
+  if(steam) {
+    steam.warmTo(160);
+    steam.presure(100)
+  }
 
   if(water)
-    water.set(160)
+    if(tank.hasWater) {
+      water.warmTo(60);
+    }
+}
+
+const boilers = [
+  {
+    warmUp: null,
+    off: null
+  },
+  {
+    warmUp: null,
+    off: null
+  }
+]
+
+const water = {
+  warmTo: (temp) => {}
+}
+
+const steam = {
+  warmTo: (temp) => {
+
+  },
+  pressure:  null
 }
 
 function drawShot(temp, time){
@@ -61,7 +84,7 @@ function infusion(time){
 }
 
 // example of running this code:
-run(true, true, true, true, boilers, dashboard);
+run(true, true, steam, water, boilers, dashboard);
 
 
 

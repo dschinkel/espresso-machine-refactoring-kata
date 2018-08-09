@@ -13,7 +13,7 @@ When we say **messy** it means all sorts of things:
 
     - If you're a beginner with tests #1 can be optional but still do #3 after you refactor and get to know TDD
 
-2. **Refactor it** using [SOLID Principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+2. **Refactor it** using [SOLID Principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) and [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) practices
 
 3. **Add new features** via TDD to extend the code that now adhere's to SOLID
     - 
