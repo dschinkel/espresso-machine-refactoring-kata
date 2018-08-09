@@ -23,6 +23,6 @@ When we say **messy** it means all sorts of things:
 
 3. **Add new features** via TDD to extend the code that now adhere's to SOLID
 
-- What's the point of this Step?
-    - Now that you've learned a little about SOLID and Clean Code, try learning a bit of TDD'ing new features on top of it now
-    - you should also see that now it's easier to find where to place stuff, where to add new behavior, and so on since you've completed step 2
+    - What's the point of this Step?
+        - Now that you've learned a little about SOLID and Clean Code, try learning a bit of TDD'ing new features on top of it now
+        - you should also see that now it's easier to find where to place stuff, where to add new behavior, and so on since you've completed step 2
