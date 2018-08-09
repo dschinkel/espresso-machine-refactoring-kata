@@ -3,7 +3,6 @@
 */
 
 
-
 // ****** UI ****** - some fake React code that doesn't work yet
 const dashboard = {
   on: () => {
@@ -44,7 +43,7 @@ function run(awake, sleep, pull, steam, water, boilers, dashboard) {
 
   if(steam) {
     steam.warmTo(160);
-    steam.presure(100)
+    steam.pressure(100)
   }
 
   if(water)

@@ -16,4 +16,4 @@ When we say **messy** it means all sorts of things:
 2. **Refactor it** using [SOLID Principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod) and [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) practices
 
 3. **Add new features** via TDD to extend the code that now adhere's to SOLID
-    - 
+
