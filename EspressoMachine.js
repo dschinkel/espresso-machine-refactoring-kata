@@ -22,10 +22,16 @@ const dashboard = {
   }
 }
 
+function drawShot(temp, time){
 
+}
+
+function infusion(time){
+
+}
 
 // ****** Underlying API ******
-function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
+function run(awake, sleep, pull, steam, water, boilers, dashboard) {
   if (awake) {
     boilers[0].warmUp();
     boilers[1].warmUp();
@@ -44,24 +50,18 @@ function run(awake, sleep, pull, steam, water, boilers, light, dashboard) {
       temp = 165,
       time2 = 15;
 
-    // run pre-infusion
-      // not sure what this is going to be yet
-    // pull the shot
-      // not sure what this is going to be yet
+    infusion(time);
+    drawShot(temp, time2);
   }
 
-  /*
-    default shot - standard
-    if(steam)
-      // run steam
-        - default hard coded temp
-        - default hard coded pressure
+  if(steam)
+    steam.set(180, 100);
 
-    if(water)
-      // run water
-        - default temp
-  */
+  if(water)
+    water.set(160)
 }
+
+run(true, true, true, true, broilers, dashboard);
 
 
 
