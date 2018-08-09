@@ -11,7 +11,7 @@ const boilers = [
   }
 ]
 
-// ****** UI ******
+// ****** UI ****** - some fake React code that doesn't work yet
 const dashboard = {
   on: () => {
     return "<Dashboard on />"
