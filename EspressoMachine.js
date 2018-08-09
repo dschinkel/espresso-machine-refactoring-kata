@@ -14,12 +14,13 @@ const dashboard = {
 }
 
 // ****** Underlying API ******
-function run(awake, sleep, pull, steam, water, tank, boilers, dashboard) {
+function run(awake, sleep, pull, steam, water, boilers, dashboard) {
   const tank = {
     hasWater: true
   }
 
   if (awake) {
+    if(!dashboard) return;
 
     dashboard.on();
     return dashboard;
@@ -66,10 +67,6 @@ const boilers = [
     off: null
   }
 ]
-
-const tank = {
-  hasWater: true
-}
 
 const water = {
   warmTo: (temp) => {}
