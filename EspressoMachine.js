@@ -26,14 +26,6 @@ const dashboard = {
   }
 }
 
-function drawShot(temp, time){
-
-}
-
-function infusion(time){
-
-}
-
 // ****** Underlying API ******
 function run(awake, sleep, pull, steam, water, boilers, dashboard) {
   if (awake) {
@@ -65,6 +57,15 @@ function run(awake, sleep, pull, steam, water, boilers, dashboard) {
     water.set(160)
 }
 
+function drawShot(temp, time){
+
+}
+
+function infusion(time){
+
+}
+
+// example of running this code:
 run(true, true, true, true, boilers, dashboard);
 
 
