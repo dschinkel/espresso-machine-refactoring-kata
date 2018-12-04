@@ -7,6 +7,7 @@ In this kata we have hypothetical source code behind an espresso machine's touch
 When we say **messy** it means all sorts of things:
 - Doesn't adhere to SOLID
 - is not [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (naming of functions, variables, size of functions, and more)
+- doesn't take into account 4 Rules of Simple Design practices
 
 *Your job is to perform the following in this order:*
 1. **Write integration tests** around the messy legacy code to gain confidence before refactoring
@@ -20,6 +21,7 @@ When we say **messy** it means all sorts of things:
     - What's the point of this Step?
         - Now that you have a little coverage hopefully from step 1, you can try to refactor.  Even a small level of test safety helps as you should start to see
         - To push yourself to learn SOLID principles
+        - To push yourself to learn the [4 Rules of Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html) by Kent Beck
 
 3. **Add new features** via TDD to extend the code that now adhere's to SOLID
 
